@@ -125,7 +125,7 @@
     <!-- HOME -->
     <section id="v-home">
       <div class="profile box"><div class="in profile">
-        <div class="pic">🧽</div>
+        <div class="pic">😀</div>
         <div>
           <div style="font-size:18px;font-weight:bold" id="pName"></div>
           <div style="margin:4px 0">"getting it done :)"</div>
@@ -248,8 +248,8 @@
 
 <script>
 /* ---------- DATA ---------- */
-const TECHS = ["Josh","Josh #2","CJ","Dawson","Dylan","Shelby","David"];
-const EMOJI = ["🧽","🧼","🪡","🚗","🧴","🛠️","🎨"];
+const TECHS = ["Josh","Josh #2","CJ","Dawson","Dillion","Shelby","David"];
+const EMOJI = ["😀","😎","😁","🤠","😄","😊","🤓"];
 
 // Real dealerships; coordinates approximate; contacts are dummy placeholders.
 const DEALERS = [
@@ -300,7 +300,7 @@ function enterApp(){
   $("whoName").textContent = me; $("pName").textContent = me; $("pName2").textContent = me;
   $("pLast").textContent = new Date().toLocaleDateString();
   $("addTech").textContent = me;
-  document.querySelector(".pic").textContent = EMOJI[TECHS.indexOf(me)] || "🧽";
+  document.querySelector(".pic").textContent = EMOJI[TECHS.indexOf(me)] || "😀";
   fillDealerSelects(); renderAll(); locate(false); show("home");
 }
 try{ const m = sessionStorage.getItem("cn_me"); if(m && TECHS.includes(m)){ me=m; enterApp(); } }catch(e){}
